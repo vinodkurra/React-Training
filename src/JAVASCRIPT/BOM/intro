@@ -1,0 +1,37 @@
+BOM - Browser Object Model.
+
+
+Window methods  // we can able to manipulate browser window
+Document Methods // we can use to customize the elements with in current document
+Screen Methods // it provides info fo users device screen
+History Methods  // it provides browsers session history  // history.back()  //   history.forward()  //  history.go();
+Navigator Methods // it provides browsers info like defalut language and ///  online/offline status
+Location Methods //  it provides current url info like host name and web page name
+console // we can access browser console  // log, error, warn, clear
+
+
+ 
+
+
+
+// location.pathname
+
+// const pathname = "/dashboard/admin"
+
+// var path = pathname.split("/") //  ["dashboard", "admin"]  // path[1]
+
+
+// localStorage, sessionStorage and cookies
+
+
+
+useEffect(() => {
+    if (process.env.NODE_ENV === 'production' && process.env.clearLogs === true) {
+      const interval = setInterval(() => {
+        console.clear();
+      }, 2000);
+
+      // Cleanup on unmount
+      return () => clearInterval(interval);
+    }
+}, []);

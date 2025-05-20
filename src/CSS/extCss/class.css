@@ -1,0 +1,24 @@
+.center {
+  text-align: center;
+  color: red;
+}
+
+#center {
+  text-align: center;
+  color: blue;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+/* position */
+
+.hOne {
+  position: relative;
+  left: 100px;
+  top: 50px;
+}

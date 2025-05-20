@@ -1,0 +1,178 @@
+React JS is js library 
+
+ajax -> axios 
+
+newDate() =>  momemt
+
+
+(1) single page applications 
+welcome -> other 
+
+
+html css js ->
+
+welcome to dashboard -> account 
+
+
+Reusable UI components - Table
+
+<Table data={userData} />
+
+<Table data={employeesData} />
+
+
+1) virtual dom -> 
+
+real dom -> perfomance, slow, memory waste.
+
+virtul dom 
+
+
+2) reusable components
+3) one way data binding
+
+
+
+React -> class -> redux 
+
+function -> context 
+
+
+
+parent ->  child1 -> child2
+
+diffing algorithm
+
+recoincelisation 
+
+
+
+JSX ->  js html  
+
+js + html 
+
+
+Perfomance 
+easy to learn
+npms -> huge collection
+large community
+server side rendering -> api -> response -> page -> node js + react js -> next js 
+
+client -side -rendering - > browser -> 
+
+
+
+// DAY 2 
+
+
+node download //
+
+node -v
+npm --v
+
+npx create-react-app learning
+
+Installing react, react-dom, and react-scripts with cra-template...
+
+react-dom 
+react-scripts
+
+webpack 
+
+npm start -> hot reloading  and npm test and npm build
+
+ 
+jsx -> JS    babel compiler  -> bundel and minify -> build file  
+
+
+
+JSX -> // conidtion  ?  statement 1 : statement 2
+
+
+Components // button , form, table, entire 
+
+reusabiity
+
+seaparations of issues to trace them easily || debug
+
+easy to maintain test cases and easy to track
+
+breaking complex ui into small ui pieces
+
+
+
+types components
+
+functional component  ->  react hooks
+
+function APP () {
+    return (
+        <div>
+        I am functional component
+        </div>
+    )
+}
+
+const App = () =>{ 
+     return (
+        <div>
+        I am functional component
+        </div>
+    )
+}
+
+
+
+class based components
+
+import React, {Component} from 'react';
+
+class App extends Component {
+
+    render() {
+        return (
+        <div>
+        I am functional component
+        </div>
+    )
+
+    }
+}
+
+
+
+state, props ->  
+
+parent component  -> child component 
+
+<ChildComponent   property={value}  property={value} ... />
+
+const props = {
+    name : "Vinod",
+    age : 23,
+    role : "developer
+}
+
+const {name, age, role } = props;
+
+ 
+
+component life cycles -> class based -> usehooks replace 
+
+useState, 
+useEffect -> 4
+useCallback
+useMemo
+
+useContext
+
+
+constructor ()
+ {
+
+ }
+
+getDerivedStatefromProps()
+
+
+state + life cycle methods
