@@ -1,0 +1,30 @@
+useEffect
+
+import {useEffect} from "react";
+
+
+state update -> component will re render
+
+user leaving this component
+
+useEffect(1, 2)
+
+1) () =>{
+
+}
+
+2) optional
+ a) not passing =>  every re-render time useEffect code will execute. //  0.00001%
+ b) [] => on component mounting time useEffect code will execute only once.  // 68%
+ c) [value] => useEffect code will execute everytime when the value is changed // 30%
+
+
+return method : this will cancel or clear any sessions or time intervals or subscriptions during component unmount time.  2%
+
+
+
+Dont do :
+
+1) we should not do any state update, if we dont pass second argument in useEffect.
+
+2) we should not do any state update, if we are passing same state inside the dependency array.

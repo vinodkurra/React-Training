@@ -1,0 +1,34 @@
+life cycle methods
+
+component life cycles -> class based -> usehooks replace 
+
+useState, 
+useEffect -> 4
+useCallback
+useMemo
+
+useContext
+
+
+class based components
+
+3 phases
+
+1) mounting  - useState, useEffect(()=>{   }, [])
+2) updating  - useEffect(()=>{   }, [value])   
+3)unmounting - useEffect(()=>{   }, [value])  // return method 
+
+
+mounting :
+
+class                              functional
+constructor   ->                  useState, useReducer
+getDerivedStateFromProps ->       useEffect(()=>{   }, [])
+componentDidMount                
+shouldComponentUpdate              useEffect(()=>{   }, [value])      
+getSnapshotBeforeUpdate              useLayoutEffect()
+componentDidUpdate
+componentWillUnmount
+
+
+
