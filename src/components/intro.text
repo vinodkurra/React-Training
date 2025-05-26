@@ -28,3 +28,5 @@ Dont do :
 1) we should not do any state update, if we dont pass second argument in useEffect.
 
 2) we should not do any state update, if we are passing same state inside the dependency array.
+
+

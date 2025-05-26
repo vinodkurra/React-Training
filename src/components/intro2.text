@@ -1,0 +1,18 @@
+Hooks
+
+use state
+useEffect
+
+
+useRef : directly accessing dom nodes
+useMemo : it will memoize the result and it will re-caclulate only when dependencies change.( avoid unnecessary re-calculations)
+useCallback : it will memoize the function and avoid re-creation of function unless its dependencies changes.
+memo : it will memoize the output of that component and props : 
+
+let a = 60;
+let b=30;
+
+
+const value = useMemo(()=>{
+    return a +b;
+}, [a, b])
