@@ -7,12 +7,15 @@ import LifeCycles from "./functionalComponent";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./components/Home";
 import Login from "./components/Login";
-import Parent from "./components/useCallBack/parent";
+// import Parent from "./components/useCallBack/parent";
+import Parent from "./components/prop-types/parent";
+import CustomHooks from "./components/CustomHooks";
+import UserInput from "./components/userInput";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Parent />
+    <UserInput />
   </React.StrictMode>
 );
 

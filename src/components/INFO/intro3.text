@@ -1,0 +1,26 @@
+Props validation
+
+
+prop-types
+
+command : npm i prop-types --save    || yarn add prop-types
+
+javascript -> types - loosly coupled -> prop-types
+
+typescript : strciktly type checking 
+
+
+
+default props : when we dont send that property or we send undefined to that property then we have to use default prop values to avoid ui break.
+
+array : []
+name = ""
+
+
+
+conditional rendering
+
+condition ? statement1 : statement 2
+
+
+key : key should given as unique identifier to an item in the list while mapping.

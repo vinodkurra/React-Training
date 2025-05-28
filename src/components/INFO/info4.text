@@ -1,0 +1,42 @@
+Custom hooks:
+
+
+
+
+pre defined hooks from React.
+useState, useEffect, useMemo ...
+
+
+hook : a stateful logic that we reuse any where.
+
+custom hook:
+
+const getToKnowDeviceWidth = () =>{
+    return window.innerWidth;
+}
+
+ 
+const useWindowWidth = () =>{
+
+const [width, setWidth] = useState(window.innerWidth);
+
+useEffect(()=>{
+
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return()=> window.removeEventListener("resize", handleResize)
+
+}, [])
+
+
+
+    return  width
+}
+
+
+debounce :   it will for userinput and it will trigger the callback after once user has entered his input value along delay time.
+
+
+
+vinod
