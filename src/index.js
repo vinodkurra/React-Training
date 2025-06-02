@@ -11,11 +11,12 @@ import Login from "./components/Login";
 import Parent from "./components/prop-types/parent";
 import CustomHooks from "./components/CustomHooks";
 import UserInput from "./components/userInput";
+import GetUserData from "./components/fetchData";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <UserInput />
+    <GetUserData />
   </React.StrictMode>
 );
 

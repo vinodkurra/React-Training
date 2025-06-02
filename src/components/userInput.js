@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import useDebounce from "../hooks/useDebounce";
+
 const UserInput = () => {
   const [name, setName] = useState("");
   const [data, setData] = useState(null);
