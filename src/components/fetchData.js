@@ -27,8 +27,6 @@ const GetUserData = () => {
     });
   }, []);
 
-  console.log("data", todosData, postsData);
-
   if (todoLoading || postsLoading) {
     return <div> LOADING ......</div>;
   }
