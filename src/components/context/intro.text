@@ -1,0 +1,46 @@
+CONTEXT
+
+
+Parent -> child1 
+          -> child 1
+                    child 1 -> 
+                            child 1
+
+
+props -> parent -> nested child ->  unwnated childs sending data - > PROP DRILLING - AVOID
+
+
+Parent1 -> child1 -> child 1 -> child 1 ->  child 1
+
+Parent2 -> child 1 -> child 1  
+
+Props can be sent only if we have any relation between components  Like : Parent and child -> overcome
+
+
+
+
+Context -> contextProvider
+  
+
+  API CALLS
+
+  local state -> states in context
+
+  reusable logic
+
+  
+  <contextProvider>
+  
+  <App />
+
+  <Account />
+
+
+  
+  
+  </contextProvider>
+
+
+  import CountProvider from "path"; // export default
+
+import {CounterContext } from "path" // export const

@@ -1,5 +1,6 @@
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, memo } from "react";
 import Child from "./child";
+import Users from "../Users";
 
 const quantity = 12;
 const Parent = () => {

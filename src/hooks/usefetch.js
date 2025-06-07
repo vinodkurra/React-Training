@@ -61,7 +61,7 @@ const useFetch = (endPoint, isPublic = true) => {
 
   const GET = useCallback(
     (
-      method = "GET",
+      method = "",
       body = null,
       id = null,
       param = null,

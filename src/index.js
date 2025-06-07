@@ -12,12 +12,17 @@ import Parent from "./components/prop-types/parent";
 import CustomHooks from "./components/CustomHooks";
 import UserInput from "./components/userInput";
 import GetUserData from "./components/fetchData";
-import AppRoutes from "./components/Routing/AppRoutes";
+import Counter from "./components/context/counter";
+import ViewCount from "./components/context/viewCount";
+import { CountProvider } from "./components/context/CounterProvider/counterProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AppRoutes />
+    <CountProvider>
+      <Counter />
+      <ViewCount />
+    </CountProvider>
   </React.StrictMode>
 );
 
