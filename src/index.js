@@ -15,13 +15,18 @@ import GetUserData from "./components/fetchData";
 import Counter from "./components/context/counter";
 import ViewCount from "./components/context/viewCount";
 import { CountProvider } from "./components/context/CounterProvider/counterProvider";
+import GetContextData from "./components/context2/getUsers";
+import ShowUsers from "./components/context2/showUsers";
+import { GetUsersProvider } from "./components/context2/usersProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <CountProvider>
-      <Counter />
-      <ViewCount />
+      <GetUsersProvider>
+        <GetContextData />
+        <ShowUsers />
+      </GetUsersProvider>
     </CountProvider>
   </React.StrictMode>
 );

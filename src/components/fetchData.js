@@ -19,8 +19,6 @@ const GetUserData = () => {
   const { POST: POSTAPI, data: postAPiData } = useFetch("/add");
 
   useEffect(() => {
-    // todosGet();
-    // postsGet();
     POSTAPI("POST", {
       title: "I am in love with someone.",
       userId: 5,
