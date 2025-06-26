@@ -19,15 +19,15 @@ import GetContextData from "./components/context2/getUsers";
 import ShowUsers from "./components/context2/showUsers";
 import { GetUsersProvider } from "./components/context2/usersProvider";
 import TodoApp from "./TODO";
+import ContextTodoComponent from "./CONTEXT_TODO/contextTodoComponent";
+import { UserProvider } from "./CONTEXT_TODO/todoProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CountProvider>
-      <GetUsersProvider>
-        <TodoApp />
-      </GetUsersProvider>
-    </CountProvider>
+    <UserProvider>
+      <ContextTodoComponent />
+    </UserProvider>
   </React.StrictMode>
 );
 
